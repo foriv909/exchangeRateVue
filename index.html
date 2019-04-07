@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8">
+
+    <title>Exchange Rate</title>
+  </head>
+  <body>
+    <h2>歡迎光臨花花銀行!</h2>
+    <div id="changeRate">
+      {{message}} 
+      <br>
+      <input type="number" placeholder="輸入臺幣金額(數字)" v-model="money"></input>
+
+      <h3>美金(USD):</h3>
+      <div class="usa">
+        {{money * 0.0324}}
+      </div>
+      <h3>英鎊(GBP):</h3>
+      <div class="gb">
+        {{money * 0.0248}}
+      </div>
+      <h3>歐元(EUR):</h3>
+      <div class="uk">
+        {{money * 0.0288}}
+      </div>
+      <h3>加拿大幣(CAD):</h3>
+      <div class="ca">
+        {{money * 0.0435}}
+      </div>
+      <h3>澳幣(AUD):</h3>
+      <div class="aust">
+        {{money * 0.0457}}
+      </div>
+      <h3>日幣(JPY):</h3>
+      <div class="ja">
+        {{money * 3.59}}
+      </div>
+      <h3>港幣(HKD):</h3>
+      <div class="hk">
+        {{money * 0.254}}
+      </div>
+      <h3>泰幣(THB):</h3>
+      <div class="th">
+        {{money * 1.0266}}
+      </div>
+    </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+  <script src="js/script.js"></script>
+  </body>
+</html>
